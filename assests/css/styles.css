@@ -52,68 +52,31 @@ p {
     isolation: isolate;
 }
 
+
 /* ----------HEADER NAVIGATION STYLES--------------- */
 header {
+    /* position: sticky;
+    top: 0; */
     display: flex;
     justify-content: center;
-    align-content: center;
     background-color: aqua;
     
 }
 
-.header-wrapper {
+/* .header-wrapper {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
 
 
-}
-
-@media (max-width: 375px) {
-
-    .header-wrapper {
-        display: flex;
-        justify-content: center;
-        
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-    body {
-        display: block;
-        flex-wrap: wrap;
-    }
-    
-    .rest-nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    .home-button {
-        margin: auto;
-    }
+} */
 
 
-    .section {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    
-
-
-
-    
-}
 
 
 nav {
     display: flex;
-    padding: 1rem 0.5rem;
     gap: 1rem;
 }
 
@@ -121,7 +84,7 @@ nav {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    padding: 4rem;
+    margin: 4rem;
 
 }
 
@@ -192,7 +155,137 @@ a {
 section {
     display: flex;
     flex-direction: column;
+    gap: 5rem;
     padding: 3%;
+}
+ .lumi-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+ }
+
+.lumi-des {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    
+}
+
+.lumi-title {
+    display: flex;
+    justify-content: center;
+    background-color: deepskyblue;
+    padding: 2rem 0;
+    margin: 0 45rem;
+    border-radius: 20px;
+}
+
+.lumi-origin {
+    display: flex;
+    justify-content: center;
+    margin: 0 30rem;
+    padding: 1rem;
+    background-color: lightblue;
+    border-radius: 20px;
+
 }
 
 
+
+
+
+
+
+
+
+.lumi-pic {
+    margin: auto;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 60px;
+    margin: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------MEDIA QUERIES */
+@media (max-width: 100vh) {
+    header {
+    
+
+    }
+
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        
+    }
+    li {
+        padding: 1rem;
+    }
+    body {
+        display: block;
+        flex-wrap: wrap;
+    }
+    
+    .rest-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1.5rem;
+        
+    }
+
+    .home-button {
+        margin: auto;
+    }
+
+    .theme-toggle{
+        margin: 3.5rem;
+    }
+
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .lumi-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lumi-title {
+        margin: auto;
+        padding: 1rem;
+    }
+    .lumi-origin {
+        margin: auto;
+        padding: auto;
+    }
+
+
+
+    
+}
